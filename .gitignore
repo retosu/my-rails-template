@@ -1,0 +1,14 @@
+/.bundle
+
+/log/*
+/tmp/*
+
+.byebug_history
+
+config/secrets.yml
+db/schema.rb
+public/uploads
+.rspec
+.ruby-gemset
+
+/public/assets

@@ -1,0 +1,20 @@
+default: &default
+  adapter: 'mysql2'
+  encoding: utf8mb4
+  charset: utf8mb4
+  collation: utf8mb4_general_ci
+  port: 3306
+  pool: 5
+  timeout: 5000
+  url: <%= ENV['DATABASE_URL'] %>
+
+development:
+  <<: *default
+  database: sample_development
+
+test:
+  <<: *default
+  database: sample_test
+
+production:
+  url: <%= ENV['DATABASE_URL'] %>

@@ -1,0 +1,1 @@
+Dir["db/*.schema"].each { |f| require f }
